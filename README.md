@@ -83,4 +83,8 @@ You must configure the environment to use the IntelÂ® Distribution of OpenVINOâ„
 ```
 source /opt/intel/openvino/bin/setupvars.sh -pyver 3.5
 ```
+#### Running the App
+To run the app itself, with the UI server, MQTT server, and FFmpeg server also running, do:
 
+```
+python app.py | ffmpeg -v warning -f rawvideo -pixel_format bgr24 -video_size 1280x720 -framerate 24 -i - http://0.0.0.0:3004/fac.ffm```
