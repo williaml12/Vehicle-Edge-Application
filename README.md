@@ -9,6 +9,8 @@
 ## What it Does
 
 The vehicle counter application will demonstrate how to create a smart video IoT solution using Intel® hardware and software tools. The app will detect people, vehicle in a designated area, providing the number of frame, average duration of vehicle in frame, and total count.
+## How it Works
+Person/Vehicle/Bike detector is based on SSD detection architecture, RMNet backbone, and learnable image downscale block (like person-vehicle-bike-detection-crossroad-0066, but with extra pooling). The model is intended for security surveillance applications and works in a variety of scenes and weather/lighting conditions.
 
 ![architectural diagram](./arch_diagram.png)
 
