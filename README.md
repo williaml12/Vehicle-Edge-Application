@@ -36,3 +36,51 @@ Utilize the classroom workspace, or refer to the relevant instructions for your 
 - [Linux/Ubuntu](./linux-setup.md)
 - [Mac](./mac-setup.md)
 - [Windows](./windows-setup.md)
+
+## Run the application
+
+From the main directory:
+
+### Step 1 - Start the Mosca server
+
+```
+cd webservice/server/node-server
+node ./server.js
+```
+
+You should see the following message, if successful:
+```
+Mosca server started.
+```
+
+### Step 2 - Start the GUI
+
+Open new terminal and run below commands.
+```
+cd webservice/ui
+npm run dev
+```
+
+You should see the following message in the terminal.
+```
+webpack: Compiled successfully
+```
+
+### Step 3 - FFmpeg Server
+
+Open new terminal and run the below commands.
+```
+sudo ffserver -f ./ffmpeg/server.conf
+```
+
+### Step 4 - Run the code
+
+Open a new terminal to run the code. 
+
+#### Setup the environment
+
+You must configure the environment to use the Intel® Distribution of OpenVINO™ toolkit one time per session by running the following command:
+```
+source /opt/intel/openvino/bin/setupvars.sh -pyver 3.5
+```
+
