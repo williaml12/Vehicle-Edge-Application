@@ -10,7 +10,8 @@
 
 The vehicle counter application will demonstrate how to create a smart video IoT solution using Intel® hardware and software tools. The app will detect people, vehicle in a designated area, providing the number of frame, average duration of vehicle in frame, and total count.
 
-![architectural diagram](./images/arch_diagram.png)
+![architectural diagram](./arch_diagram.png)
+
 ## Requirements
 
 ### Hardware
